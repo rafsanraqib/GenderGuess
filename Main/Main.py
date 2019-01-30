@@ -14,12 +14,13 @@ n12 = "bhaiya"
 n13 = "baba"
 n14 = "ammu"
 default = "quit"
+blank = ""
 while True:
     UserInput = input()
-    name = UserInput.lower()          #Converts the UserInput to lowercase
+    name = UserInput.lower()           #Converts the UserInput to lowercase
     NameLength = len(name) -1
 
-    if name[0] == ' ' or name == " ": #prevents the program from crashing
+    if name == blank or name[0] == ' ': #prevents the program from crashing
         continue
 
     if name == n4 or name == n5 or name == n6 or name == n7 or name == n8 or name == n9 or name == n10 or name == n11 or name == n12 or name == n13 or name == n14:
